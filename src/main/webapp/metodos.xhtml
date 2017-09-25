@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+<meta charset="UTF-8"/>
+<title>Métodos</title>
+</h:head>
+<h:body>
+	<h:form>				
+		<h:inputText name="numero1" id="numero1" value="#{metodos.numero1}"></h:inputText>
+		<h:inputText name="numero2" id="numero2" value="#{metodos.numero2}"></h:inputText>
+		
+		<br/>
+		<br/>
+		
+		<h:commandButton value="somar" action="#{metodos.somar()}"></h:commandButton>
+		<h:commandButton value="subtrair" action="#{metodos.subtrair()}"></h:commandButton>
+		<h:commandButton value="multiplicar" action="#{metodos.multiplicar()}"></h:commandButton>
+		<h:commandButton value="dividir" action="#{metodos.dividir()}"></h:commandButton>	
+		
+		<br/>
+		<br/>
+		
+		<h:outputLabel value="Resultado: #{metodos.resultado}" />	
+	</h:form>
+	
+	<hr/>
+	
+	<h:form>
+		<h:inputText name="texto1" id="texto1" value="#{metodos.texto1}"></h:inputText>
+		
+		<br/>
+		<br/>
+		
+		<h:commandButton value="maiuscula" action="#{metodos.tranformarMaiuscula()}"></h:commandButton>
+		<h:commandButton value="minuscula" action="#{metodos.tranformarMinuscula()}"></h:commandButton>
+		
+		<br/>
+		<br/>
+		
+		<h:outputLabel value="Texto: #{metodos.textoTransformado}"></h:outputLabel>		
+	</h:form>
+	
+	<hr/>
+	
+	<h:form>
+		<h:selectBooleanCheckbox value="check1" id="checkTest1"></h:selectBooleanCheckbox>check1
+		<h:selectBooleanCheckbox value="check2" id="checkTest2"></h:selectBooleanCheckbox>check2
+		<h:selectBooleanCheckbox value="check3" id="checkTest3"></h:selectBooleanCheckbox>check3
+		
+		<h:commandButton value="showChecks" action="#{metodos.getCheckTest()}"></h:commandButton>
+		
+		<h:outputLabel value="Valores checados: #{metodos.checkTest}"></h:outputLabel>	
+	</h:form>
+</h:body>
+</html>

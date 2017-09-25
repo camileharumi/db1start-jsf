@@ -24,7 +24,7 @@ public class AlfredoController {
 	}
 	
 	public void exibirDadosAlfredo() {
-		setNome("Alredo Frederico Pereira da Silva Junior");
+		setNome("Alfredo Frederico Pereira da Silva Junior");
 		setIdade(199);
 	}
 	
