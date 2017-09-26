@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<meta charset="UTF-8" />
+	<title>Insert title here</title>
+</h:head>
+<h:body>
+	<h:form>
+		<h:selectOneListbox value="#{combobox.selectedValue}">
+			<f:selectItem itemValue="Paraná" itemLabel="Paraná" />
+			<f:selectItem itemValue="Santa Catarina" itemLabel="Santa Catarina" />
+			<f:selectItem itemValue="Rio Grando do Sul"
+				itemLabel="Rio Grando do Sul" />
+		</h:selectOneListbox>
+		<br />
+		<br />
+		<h:commandButton value="Check" action="#{combobox.getSelectedValue()}" />
+	</h:form>
+	<h:outputText value="Valor: #{combobox.selectedValue}" />
+	<hr />
+	<h:form>
+		<h:selectManyListbox value="#{combobox.valores}">
+			<f:selectItem itemValue="Paraná" itemLabel="Paraná" />
+			<f:selectItem itemValue="Santa Catarina" itemLabel="Santa Catarina" />
+			<f:selectItem itemValue="Rio Grando do Sul"
+				itemLabel="Rio Grando do Sul" />
+		</h:selectManyListbox>
+		<br />
+		<br />
+		<h:commandButton value="Check Multiple" action="#{combobox.getValores()}" />
+	</h:form>
+	<h:outputText value="Valor: #{combobox.valores}" />
+</h:body>
+</html>

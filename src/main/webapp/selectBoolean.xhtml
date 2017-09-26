@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+<meta charset="UTF-8"/>
+<title>Select Boolean</title>
+</h:head>
+<h:body>
+	<h:form>
+		<h:selectBooleanCheckbox value="#{selectBoolean.value1}" id="value1"></h:selectBooleanCheckbox>check1
+		<h:selectBooleanCheckbox value="#{selectBoolean.value2}" id="value2"></h:selectBooleanCheckbox>check2
+		
+		<br/>
+		<br/>
+		
+		<h:commandButton value="Checar valores"></h:commandButton>
+		
+		<br/>
+		<br/>
+		
+		<h:outputLabel value="Check1: #{selectBoolean.value1}"></h:outputLabel>	
+		<br/>
+		<br/>
+		<h:outputLabel value="Check2: #{selectBoolean.value2}"></h:outputLabel>	
+	</h:form>
+</h:body>
+</html>

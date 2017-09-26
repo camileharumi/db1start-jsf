@@ -44,13 +44,12 @@
 	<hr/>
 	
 	<h:form>
-		<h:selectBooleanCheckbox value="check1" id="checkTest1"></h:selectBooleanCheckbox>check1
-		<h:selectBooleanCheckbox value="check2" id="checkTest2"></h:selectBooleanCheckbox>check2
-		<h:selectBooleanCheckbox value="check3" id="checkTest3"></h:selectBooleanCheckbox>check3
+		<h:selectBooleanCheckbox value="check1" id="checkTest"></h:selectBooleanCheckbox>check1
 		
-		<h:commandButton value="showChecks" action="#{metodos.getCheckTest()}"></h:commandButton>
 		
-		<h:outputLabel value="Valores checados: #{metodos.checkTest}"></h:outputLabel>	
+		<h:commandButton value="showChecks" action="#{selectBoolean.getCheckTest()}"></h:commandButton>
+		
+		<h:outputLabel value="Valores checados: #{selectBoolean.checkTest}"></h:outputLabel>	
 	</h:form>
 </h:body>
 </html>

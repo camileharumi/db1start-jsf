@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<meta charset="UTF-8" />
+	<title>Insert title here</title>
+</h:head>
+<h:body>
+	<h:form>
+		<h:inputText name="valor" id="valor" value="#{formatarTexto.valor}"></h:inputText>
+		<h:commandButton value="Formatar" action="#{formatarTexto.format()}"></h:commandButton>
+	</h:form>
+	<h:outputText value="Valor formatado: R$ #{formatarTexto.valorFormatado}" />
+</h:body>
+</html>
