@@ -32,5 +32,29 @@
 		<h:commandButton value="Check Multiple" action="#{combobox.getValores()}" />
 	</h:form>
 	<h:outputText value="Valor: #{combobox.valores}" />
+	
+	<hr/>
+	
+	<h:form>
+		<div class="form-group">
+			<h:outputLabel value="Estados do Sul do Brasil" />
+			<h:selectOneMenu id="estadosSul" value="#{combobox.uf}">
+				<f:selectItems value="#{combobox.listaUf}"/>
+			</h:selectOneMenu>
+
+		</div>
+	</h:form>
+	
+	<hr/>
+	
+	<h:form>
+		<div class="form-group">
+			<h:outputLabel value="Gêneros" />
+			<h:selectOneMenu id="generos" value="#{combobox.genero}">
+				<f:selectItems value="#{combobox.listaGeneros}"/>
+			</h:selectOneMenu>
+
+		</div>
+	</h:form>
 </h:body>
 </html>
